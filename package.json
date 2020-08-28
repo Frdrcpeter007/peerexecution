@@ -1,0 +1,27 @@
+{
+  "name": "peerjs-execution-back",
+  "version": "1.0.0",
+  "description": "Execution en back de PeerJS",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Frdrcpeter007/peerexecution.git"
+  },
+  "keywords": [
+    "PeerJS"
+  ],
+  "author": "Peter NDENGO",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Frdrcpeter007/peerexecution/issues"
+  },
+  "homepage": "https://github.com/Frdrcpeter007/peerexecution#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "http": "0.0.1-security",
+    "peer": "^0.5.3"
+  }
+}
