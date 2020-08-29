@@ -1,9 +1,15 @@
 const express = require('express');
 const { ExpressPeerServer } = require('peer');
+const cors = require('cors');
 
 const app = express();
 
-app.get('/', (req, res, next) => res.send('Hello world!'));
+app.use(cors());
+
+app.get('/', (req, res, next) => {
+  
+  res.status(200).send({port: server.address().port})
+});
 
 const http = require('http');
 
@@ -15,4 +21,4 @@ const peerServer = ExpressPeerServer(server, {
 
 app.use('/peerjs', peerServer);
 
-server.listen(process.env.PORT || 9000);
+server.listen(process.env.PORT || 5432);
